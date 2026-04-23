@@ -217,7 +217,7 @@ gc()
 For a detailed background and description of the following steps please view the `sigident.func` package's [vignette](https://github.com/miracum/clearly-sigident.func/blob/master/vignettes/sigident_func_Howto_Functional.Rmd).
 
 ```{r}
-deg_entrez <- unique(mergedset@featureData@data$ENTREZ_GENE_ID)
+deg_entrez <- unique(mergedset@featureData@data$`Gene ID`)
 deg_entrez <- deg_entrez[deg_entrez != ""]
 ```
 
