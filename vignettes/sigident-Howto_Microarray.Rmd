@@ -248,8 +248,10 @@ enr_fitlm <- sigident.func::go_diff_reg(
   mergeset = mergeset,
   idtype = idtype,
   diagnosis = diagnosis,
-  entrezids = mergedset@featureData@data$ENTREZ_GENE_ID
+  entrezids = mergedset@featureData@data$`Gene ID`
 )
+
+
 
 enr_fitlm_topgo <- sigident.func::extract_go_terms(
   gene = enr_fitlm,
